@@ -1,0 +1,63 @@
+// add to /usr/share/X11/xkb/symbols/us and edit other files
+partial alphanumeric_keys
+xkb_symbols "dvorak-intl-mac" {
+
+    include "us(dvorak)"
+    name[Group1]= "English (Dvorak, intl., with dead keys, mac)";
+
+    key <TLDE> { [section, plusminus ] };
+
+    key <AE01> { [     1,     exclam,    exclamdown,      U2044 ] };
+    key <AE02> { [     2,         at,   trademark, EuroSign ] };
+    key <AE03> { [     3, numbersign, sterling,      U2039 ] };
+    key <AE04> { [     4,     dollar,      cent,         U203A ] };
+    key <AE05> { [     5,    percent,      infinity,     dead_cedilla ] }; // 4 wrong
+    key <AE06> { [     6, asciicircum,    section,      dead_circumflex ] };
+    key <AE07> { [     7,  ampersand,       U00B6,  U2021 ] };
+    key <AE08> { [     8,   asterisk, U2022,      degree ] };
+    key <AE09> { [     9,  parenleft, U00AA, U00B7 ] };
+    key <AE10> { [     0, parenright, U00BA, U201A ] };
+    key <AE11> { [ bracketleft,  braceleft,  leftdoublequotemark, rightdoublequotemark ] };
+    key <AE12> { [bracketright, braceright, leftsinglequotemark, rightsinglequotemark ] };
+
+    key <AD01> { [     apostrophe,  quotedbl , ae , AE ] };
+    key <AD02> { [     comma,       less, U2264 , dead_macron ] };
+    key <AD03> { [     period,    greater, U2265 , dead_breve ] };
+    key <AD04> { [     p,          P,    U03C0, U220F ] };
+    key <AD05> { [     y,          Y,    yen, U00C1 ] };
+    key <AD06> { [     f,          F, U0192 , U00CF     ]   };
+    key <AD07> { [     g,          G, copyright, dead_doubleacute       ]   };
+    key <AD08> { [     c,          C,     ccedilla, Ccedilla ] };
+    key <AD09> { [     r,          R,    registered,       U2030 ] };
+    key <AD10> { [     l,          L,        notsign,         U00D2 ] };
+    key <AD11> { [     slash,   question, division ,        questiondown ] };
+    key <AD12> { [     equal,       plus,      U2260,         plusminus ] };
+
+    key <AC01> { [     a,          A,        aring,           Aring ] };
+    key <AC02> { [     o,          O,        U00F8,           U00D8 ] };
+    key <AC03> { [     e,          E,        dead_acute,      U00B4 ] };
+    key <AC04> { [     u,          U,        dead_diaeresis,  U00A8 ] };
+    key <AC05> { [     i,          I,        dead_circumflex, U02C6 ] };
+    key <AC06> { [     d,          D,        partialderivative, U00CE ] };
+    key <AC07> { [     h,          H,        U02D9,           Oacute        ]   };
+    key <AC08> { [     t,          T,        dagger,          U02C7 ] };
+    key <AC09> { [     n,          N,        dead_tilde,      U02DC ] };
+    key <AC10> { [     s,          S,        ssharp,          U00CD ] };
+    key <AC11> { [     minus, underscore,    U2013,           U2014 ] };
+    key <AC12> { [     backslash,  bar,      guillemotleft,   guillemotright ]};
+
+
+    key <LSGT> { [     U0060,      U007E,    dead_grave,      U0060 ] };
+    key <AB01> { [     semicolon,  colon,    U2026,           Uacute ] };
+    key <AB02> { [     q,          Q,        U0153,           U0152 ] };
+    key <AB03> { [     j,          J,        U2206,           U00D4     ]   };
+    key <AB04> { [     k,          K,        dead_abovering,  U02DA ] };
+    key <AB05> { [     x,          X,        U2248,           dead_ogonek]  };
+    key <AB06> { [     b,          B,        integral,        U0131]    };
+    key <AB07> { [     m,          M,        mu,              U00C2 ] };
+    key <AB08> { [     w,          W,        U2211,           U201E ] };
+    key <AB09> { [     v,          V,        U221A,           U25CA     ]   };
+    key <AB10> { [     z,          Z,        U03A9,           U00B8 ] };
+
+    include "level3(ralt_switch)"
+};
